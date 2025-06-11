@@ -1,0 +1,32 @@
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{tikz}
+
+\tcbset{
+	myboxstyle/.style={
+		enhanced,
+		boxrule=0pt,
+		frame hidden,
+		colback=white,
+		borderline north={1pt}{0pt}{black},
+		borderline south={1pt}{0pt}{black},
+		sharp corners,
+		boxsep=2pt,
+		left=0pt,
+		right=0pt,
+		top=5pt,
+		bottom=5pt,
+		fontupper=\itshape
+	}
+}
+\newtcolorbox{linebox}[1][]{myboxstyle,#1}
+
+\newenvironment{itempoint}[1][]{
+	\begin{linebox}[#1]
+	}{
+	\end{linebox}\noindent
+}
+
+\newcommand{\define}[1]{\ul{\emph{#1}}}
