@@ -1,0 +1,52 @@
+\section{Pure Mathematics 3 (for Paper 3)}
+\subsection{Algebra}
+
+\begin{itempoint}
+Understand the meaning of $|x|$, sketch the graph of $y = |ax + b|$ and
+use relations such as $|a| = |b| \Leftrightarrow a^2 = b^2$ and
+$|x - a| < b \Leftrightarrow a - b < x < a + b$ when solving equations and
+inequalities
+\end{itempoint}
+\centrebold{Solutions of Equations}
+The \emph{\ul{modulus}} of a number is its magnitude, disregarding its sign, 
+the modulus of $x$ is $|x|$ and hence, $\left| -a\right| = a$. The 
+modulus of a number is  also called its \emph{absolute value}, defined formally
+below:
+$$|x| = 
+\begin{cases} 
+x, & \text{if } x \geq 0 \\
+-x, & \text{if } x < 0 
+\end{cases}
+$$
+
+For $|x| = k$, it is true that $x = \pm k$. This applies for any expression,
+including, but not limited to: 
+$$|ax + b| = k \Rightarrow ax + b = \pm k$$
+$$|ax + b| = cx + d \Rightarrow ax + b = \pm (cx + d)$$
+
+It can be proven that, $|ax + b| = |cx + d| \Rightarrow ax + b = \pm (cx + d)$
+
+\centrebold{Graphs}
+
+The graph $y = \left|f(x)\right|$, where $f(x) = ax + b$, (linear), has the
+following characteristics:
+$$\begin{aligned}
+y &= |b|, && \text{for } x = 0 \\
+x &= -\frac{b}{a}, && \text{for } y = 0
+\end{aligned}$$
+
+For example, the graph of $y = |2x - 5|$.
+
+\begin{tikzpicture}[xscale=1, yscale=0.5]
+  % Axes
+  \draw[->] (-1,0) -- (6,0) node[right] {$x$};
+  \draw[->] (0,-1) -- (0,6) node[above] {$y$};
+
+  % Graph of y = |2x - 5|
+  \draw[domain=0:2.5, thick, red] plot (\x, {-2*\x + 5});
+  \draw[domain=2.5:5, thick, red] plot (\x, {2*\x - 5});
+
+  % Vertex label
+  \filldraw[black] (2.5,0) circle (1pt);
+  \node[below right] at (2.5,0) {$(2.5, 0)$};
+\end{tikzpicture}

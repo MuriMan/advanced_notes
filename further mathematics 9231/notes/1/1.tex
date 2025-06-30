@@ -1,0 +1,190 @@
+\section{Further Pure Mathematics 1 (for Paper 1)}
+\subsection{Roots of polynomial equations}
+
+\begin{itempoint}
+Recall and use the relations between the roots
+and coefficients of polynomial equations
+\end{itempoint}
+\centrebold{Quadratics}
+The quadratic equation follows,
+\begin{align*}
+ax^2 + bx + c = 0 \\
+\implies x^2 + \frac{b}{a}x + \frac{c}{a} = 0
+\end{align*}
+which has roots $\alpha$ and $\beta$,
+\begin{align*}
+(x - \alpha)(x - \beta) = 0 \\
+\implies x^2 - (\alpha + \beta) x + \alpha\beta = 0
+\end{align*}
+hence, considering that, $S_n = \alpha^n + \beta^n$,
+$$ \boxed{\Sigma\alpha = S_1 = \alpha + \beta = -\frac{b}{a}} \\ $$
+$$ \boxed{\Sigma\alpha\beta = \alpha\beta = \frac{c}{a}} $$
+where $\Sigma\alpha$ and $\Sigma\alpha\beta$ are referred to as \emph{sum of
+roots} and \emph{product of roots}, respectively.
+
+Furthermore,
+$$ \boxed{\Sigma\alpha^2 = S_2 = \alpha^2 + \beta^2 = (\Sigma\alpha)^2
+- 2\Sigma\alpha\beta} $$
+$$ \boxed{\Sigma\frac{1}{\alpha} = S_{-1} =\frac{1}{\alpha} + \frac{1}{\beta} =
+\frac{\alpha + \beta}{\alpha\beta} = \frac{\Sigma\alpha}{\Sigma\alpha\beta}} $$
+$$ \boxed{\Sigma\frac{1}{\alpha^2} = S_{-2} = \frac{1}{\alpha^2} + 
+\frac{1}{\beta^2} = \frac{\alpha^2 + \beta^2}{\alpha^2\beta^2}
+= \frac{\Sigma\alpha^2}{(\Sigma\alpha\beta)^2}}$$
+
+Using $S_n$ as defined above, we can use known values of $S_n$ to find values
+required.
+\begin{important}
+Consider the quadratic equation $ax^2 + bx + c = 0$ with roots $\alpha$ and
+$\beta$. To find certain values of $S_n$, we must multiply the equation with
+a certain power of $x$, to achieve a power of $x$ in the equation that equals
+the value of $n$ desired.
+
+For example, when we want $S_{-1}$, we must first multiply the original 
+equation by $x^{-1}$, giving us,
+$$ ax + b + \frac{c}{x} = 0 $$
+
+We can now plug $x = \alpha$ and $x = \beta$, since they are roots,
+\begin{align}
+	a\alpha + b + \frac{c}{\alpha} = 0 \\
+	a\beta + b + \frac{c}{\beta} = 0 \\
+	a(\alpha + \beta) + 2b + \left(\frac{1}{\alpha}+\frac{1}{\beta}\right)c = 0
+	\tag{1 + 2} \\
+	\implies aS_1 + 2b + cS_{-1} = 0 \notag
+\end{align}
+here, if we know $S_1$, we can find $S_{-1}$.
+
+Note that, the coefficients are multiplied by $S_n$, where $n$ equals the
+power of $x$ to which they are a coefficient, and the constant terms are
+multiplied by 2.
+\end{important}
+
+\centrebold{Cubics}
+\noindent{}The cubic equation follows,
+\begin{align*}
+ax^3 + bx^2 + cx + d = 0 \\
+\implies x^3 + \frac{b}{a}x^2 + \frac{c}{a}x + \frac{d}{a} = 0
+\end{align*}
+which has roots $\alpha$, $\beta$, and $\gamma$,
+\begin{align*}
+(x - \alpha)(x - \beta)(x - \gamma) = 0 \\
+\implies x^3 - (\alpha + \beta + \gamma)x^2 + (\alpha\beta + \alpha\gamma +
+\beta\gamma)x - \alpha\beta\gamma = 0
+\end{align*}
+thus, using $S_n = \alpha^n + \beta^n + \gamma^n$,
+$$ \boxed{\Sigma\alpha = S_1 = \alpha + \beta + \gamma = -\frac{b}{a}} $$
+$$ \boxed{\Sigma\alpha\beta = \alpha\beta + \alpha\gamma + \beta\gamma =
+\frac{c}{a}} $$
+$$ \boxed{\Sigma\alpha\beta\gamma = \alpha\beta\gamma = -\frac{d}{a}} $$
+
+Following this,
+$$ \boxed{\Sigma\alpha^2 = S_2 = (\alpha + \beta + \gamma)^2 =
+(\Sigma\alpha)^2 - 2\Sigma\alpha\beta} $$
+$$ \boxed{\Sigma\alpha^3 = (\Sigma\alpha)^3 - 3\Sigma\alpha\beta\Sigma\alpha
++ 3\Sigma\alpha\beta\gamma} $$
+
+\begin{important}
+Here too, values of $S_n$ can be found in the method demonstrated in the
+\textbf{Quadratics} section. Note that, in such cases the constant term is
+multiplied by 3.
+\end{important}
+
+\centrebold{Quartics}
+The quartic equation
+$$ x^4 + \frac{b}{a}x^3 + \frac{c}{a}x^2 + \frac{d}{a}x + \frac{e}{a} = 0 $$
+has roots $\alpha$, $\beta$, $\gamma$ and $\delta$. Due to the monstrous
+nature of the equation, it is best to use 
+$S_n = \alpha^n + \beta^n + \gamma^n + \delta^n$ notation.
+
+$$ \boxed{\Sigma\alpha = -\frac{b}{a}} $$
+$$ \boxed{\Sigma\alpha\beta = \frac{c}{a}} $$
+$$ \boxed{\Sigma\alpha\beta\gamma = -\frac{d}{a}} $$
+$$ \boxed{\Sigma\alpha\beta\gamma\delta = \frac{e}{a}} $$
+$$ \boxed{S_2 = (\Sigma\alpha)^2 - 2\Sigma\alpha\beta} $$
+$$ \boxed{S_{-1} = \frac{\Sigma\alpha\beta\gamma}{\Sigma\alpha\beta\gamma\delta
+}} $$
+
+\begin{itempoint}
+Use a substitution to obtain an equation whose
+roots are related in a simple way to those of the
+original equation
+\end{itempoint}
+If we are given a known polynomial whose roots we also know, we can find
+any other unknown polynomial given that its roots are in terms of the roots
+of the first given polynomial. We must first write out the unknown polynomial
+in factorised form as per its roots and compare with the initial polynomial,
+finding values of the roots and arriving at the unknown polynomial.
+This is illustrated in the following:
+
+\begin{important}
+\emph{
+Given the quadratic $x^2 + 3x + 5 = 0$ with roots $\alpha$ and $\beta$, find
+the quadratic that has roots $2\alpha$ and $2\beta$.
+}
+
+The unknown quadratic is
+\begin{align*}
+(y - 2\alpha)(y - 2\beta) = 0 \\
+\implies y^2 - (2\alpha + 2\beta)y + 4\alpha\beta = 0
+\end{align*}
+comparing with the original, we find
+$$ \alpha + \beta = -3 $$
+$$ \alpha\beta = 5 $$
+
+Solving simultaneously, we find $\boxed{y^2 + 6y + 20 = 0}$ to be the quadratic
+asked for in the question.
+\end{important}
+
+Alternatively, we can derive a relationship between the roots of both 
+equations. For the same question as above:
+\begin{important}
+The new quadratic has $y = 2x \implies x = y/2$ since each root of the 
+new quadratic is twice that of the given one. Thus, plugging the above
+into the original equation:
+\begin{align*}
+	\left(\frac{y}{2}\right)^2 + 3\left(\frac{y}{2}\right) + 5 = 0 \\
+	\implies \Aboxed{y^2 + 6y + 20 = 0}
+\end{align*}
+\end{important}
+
+For roots raised to a certain power, we may use the above method or we can
+modify the original equation such that the above method becomes more
+convenient.
+\begin{important}
+The cubic $2x^3 + 7x^2 -1 = 0$ has roots $\alpha$, $\beta$, $\gamma$. Find
+the cubic with roots $\alpha^2$, $\beta^2$ and $\gamma^2$.
+
+Here, $y = x^2$. We can manipulate the given equation such that substituting
+this relationship is made simpler.
+\begin{align*}
+	2x^3 + 7x^2 -1 &= 0 \\
+	\implies \left(2x^3\right)^2 &= \left(1 - 7x\right)^2 \\
+	\implies 4x^6 &= 1 - 14x^2 + 49x^4
+\end{align*}
+hence,
+$$ \boxed{4y^3 + 49y^2 + 14y - 1 = 0} $$
+\end{important}
+
+\newpage
+High $n$ values fo $S_n$ can be found conveniently using the substitution
+method. We must formulate another polynomial of the same degree as that given
+but with roots of a higher power. As such the $n$ values required for
+the $S_n$ with the new polynomial would be lower for the same result. Observe:
+\begin{important}
+\emph{Given $x^4 + x^3 - 5 = 0$, find $S_4$.}
+
+Considering that the given quartic has roots $\alpha$, $\beta$, $\gamma$
+and $\delta$, we consider another such that the roots are $y = x^2$. For this
+quartic, $S_n = \alpha^{2n} + \beta^{2n} + \gamma^{2n} + \delta^{2n}$.\footnotemark{}
+In this case, $S_2$ of the new polynomial equals $S_4$ for the given 
+polynomial. So, we find the new polynomial:
+
+\begin{align*}
+x^4 - 5 &= -x^3 \\
+\implies x^8 - 10x^4 + 25 &= x^6 \\
+\implies y^4 -y^3 - 10y^2 + 25 &= 0 \\
+\end{align*}
+
+Hence, $S_1 = 1$ and $S_2 = 1^2 - 2(-10) = 21$. Thus $\boxed{S_4 = 21}$.
+\end{important}
+\footnotetext{More generally, for a polynomial with roots $y = x^m$, $S_n =
+\alpha^{mn} + \beta^{mn} ...$ and so on.}

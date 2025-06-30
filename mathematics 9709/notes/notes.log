@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.6.23)  25 JUN 2025 19:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.6.23)  26 JUN 2025 23:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -481,11 +481,14 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_shortintertext_sep=\dimen284
 \xmathstrut@box=\box80
 \xmathstrut@dim=\dimen285
+) (/usr/share/texmf-dist/tex/latex/polynom/polynom.sty
+Package: polynom 2017/07/17 0.19 (CH,HA)
+\pld@currstage=\count329
 )) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count329
+\l__color_backend_stack_int=\count330
 \l__pdf_internal_box=\box81
-) (./notes.aux (./1/1.aux))
+) (./notes.aux (./3/3.aux))
 \openout1 = `notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -504,16 +507,16 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count330
+\scratchcounter=\count331
 \scratchdimen=\dimen286
 \scratchbox=\box82
-\nofMPsegments=\count331
-\nofMParguments=\count332
+\nofMPsegments=\count332
+\nofMParguments=\count333
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count333
+\MPscratchCnt=\count334
 \MPscratchDim=\dimen287
-\MPnumerator=\count334
-\makeMPintoPDFobject=\count335
+\MPnumerator=\count335
+\makeMPintoPDFobject=\count336
 \everyMPtoPDFconversion=\toks45
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -521,7 +524,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@lstlisting=\count336
+\c@lstlisting=\count337
  (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks46
@@ -530,40 +533,42 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `./1/1.aux'.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./notes.toc)
+\tf@toc=\write4
+\openout4 = `notes.toc'.
 
- (./1/1.tex
 
-[1
+
+[1]
+\openout2 = `./3/3.aux'.
+
+ (./3/3.tex
+
+[2
 
 ]
 
-[2]
+[3])
 
-[3]
-
-[4])
-
-[5] (./notes.aux (./1/1.aux))
+[4] (./notes.aux (./3/3.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 20823 strings out of 475171
- 451276 string characters out of 5767095
- 863629 words of memory out of 5000000
- 43464 multiletter control sequences out of 15000+600000
+ 21372 strings out of 475171
+ 460535 string characters out of 5767095
+ 868240 words of memory out of 5000000
+ 44006 multiletter control sequences out of 15000+600000
  565226 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 121i,16n,124p,471b,914s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on notes.pdf (6 pages, 202562 bytes).
+ 121i,11n,124p,471b,916s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on notes.pdf (5 pages, 160384 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 124 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
