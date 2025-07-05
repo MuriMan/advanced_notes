@@ -1,10 +1,10 @@
 \section{Further Pure Mathematics 1 (for Paper 1)}
 \subsection{Roots of polynomial equations}
 
-\begin{itempoint}
+\begin{point}
 Recall and use the relations between the roots
 and coefficients of polynomial equations
-\end{itempoint}
+\end{point}
 \centrebold{Quadratics}
 The quadratic equation follows,
 \begin{align*}
@@ -103,11 +103,11 @@ $$ \boxed{S_2 = (\Sigma\alpha)^2 - 2\Sigma\alpha\beta} $$
 $$ \boxed{S_{-1} = \frac{\Sigma\alpha\beta\gamma}{\Sigma\alpha\beta\gamma\delta
 }} $$
 
-\begin{itempoint}
+\begin{point}
 Use a substitution to obtain an equation whose
 roots are related in a simple way to those of the
 original equation
-\end{itempoint}
+\end{point}
 If we are given a known polynomial whose roots we also know, we can find
 any other unknown polynomial given that its roots are in terms of the roots
 of the first given polynomial. We must first write out the unknown polynomial
@@ -188,3 +188,116 @@ Hence, $S_1 = 1$ and $S_2 = 1^2 - 2(-10) = 21$. Thus $\boxed{S_4 = 21}$.
 \end{important}
 \footnotetext{More generally, for a polynomial with roots $y = x^m$, $S_n =
 \alpha^{mn} + \beta^{mn} ...$ and so on.}
+
+\subsection{Rational functions and graphs}
+\begin{point}
+Sketch graphs of simple rational functions,
+including the determination of oblique
+asymptotes, in cases where the degree of the
+numerator and the demoninator are at most 2
+\end{point}
+A \define{rational function} is that which can be defined as an algebraic
+fraction with polynomials as its numerator \emph{and} denominator. An
+\define{asymptote} is generally a line that a curve approaches but never
+touches. Functions of the form:
+$$ f(x) = \frac{ax + b}{cx + d} $$
+have asymptotes that are vertical and horizontal, which are found as below,
+\begin{align*}
+	cx + d &> 0 \\
+	\implies x &> -\frac{d}{c}
+\end{align*}
+thus, the vertical asymptote is:
+$$ \boxed{x = -\frac{d}{c}} $$
+
+Let $f(x) = y$
+\begin{align*}
+	y &= \frac{ax+b}{cx+d} \\
+	\implies x &= \frac{dy-b}{a-cy} \\\\
+	a - cy > 0 \\
+	\implies y < \frac{a}{c}
+\end{align*}
+thus, the horizontal asymptote is 
+$$ \boxed{y = \frac{a}{c}} $$
+
+For curves with a quadratic denominator, we observe the following:
+\begin{important}
+\emph{Given $y = \dfrac{x}{(x-1)(x-2)}$, determine its coordinate intercepts,
+asymptotes, turning points and hence sketch the curve.}
+
+For the coordinate intercepts, we simply plug in $x = 0$ and $y = 0$, getting
+finding that the curve passes through the origin $\boxed{(0, 0)}$.
+
+It is easy to see that the vertical asymptotes are $x = 1$ and $x = 2$, and
+for $|x| \to \infty$, $y = 0$, the horizontal asymptote.
+
+The turning points of the curve may be found by differentiating and
+solving the derivative for zero, for which we find \fbox{$(2 + \sqrt{2}, 1)$
+and $(2 - \sqrt{2}, 1)$}. We plug $x$ values \emph{slightly} greater
+and less than that of the turning points to see if the curve increases or
+decreases on either side.
+
+To find the ``gap" in the curve, we cross multiply to find a quadratic 
+equation:
+$$ yx^2 + (-1 - 3y)x + 2y = 0 $$
+whose discriminant is as follows:
+$$ (-1 - 3y)^2 - 4(y)(2y) = y^2 + 6y + 1 $$
+if we set the discriminant to less than zero, we find an equality in terms
+of $y$ where the curve does not exist.
+
+$$ y^2 + 6y + 1 < 0 $$
+$$ \boxed{-3 - 2\sqrt{2} < y < -3 + 2\sqrt{2}} $$
+Thus, for the lower bound of this inequality, we have $x = \sqrt{2}$. Now
+we may sketch the curve:\vspace{2pt}
+\begin{center}
+\fbox{
+\begin{tikzpicture}
+	\begin{axis}[
+		domain=-1:3.5,
+		samples=300,
+		xlabel=$x$,
+		ylabel=$y$,
+		axis lines=middle,
+		enlargelimits,
+		xtick={-1,0,1,2,3,3.5},
+		ytick=\empty,
+		ymin=-15, ymax=15,
+		restrict y to domain=-15:15,
+		clip=false,
+		legend pos=north west,
+		]
+	% Plot the function with gaps at vertical asymptotes
+		\addplot [
+			thick,
+			unbounded coords=jump,
+			]
+			{x / ((x-1)*(x-2))};
+
+	% Draw vertical asymptotes
+		\addplot [dashed] coordinates {(1,-15) (1,-3)};
+		\addplot [dashed] coordinates {(1,0) (1,15)};
+		\addplot [dashed] coordinates {(2,-15) (2,-3)};
+		\addplot [dashed] coordinates {(2,0) (2,15)};
+
+	\end{axis}
+\end{tikzpicture}
+}
+\end{center}
+\end{important}
+
+For a curve which has quadratics as both numerator and denominator:
+\begin{align*}
+	y = \frac{ax^2+ bx + c}{dx^2 + ex + f} \\
+	\implies (dy - ay)x^2 + (ey - by)x + (fy - cy) = 0
+\end{align*}
+using the discriminant, $b^2 - 4ac$ and setting it to less than zero gives us
+values of $y$ such that the curve does not exist.
+
+We may also observe the following:
+\begin{align*}
+	y &= \frac{ax^2 + bx + c}{dx^2 + ex + f} \\
+	  &= \frac{(x^2)(a + b/x + c/x^2)}{(x^2)(d + e/x + f/x^2)} \\
+	  &= \frac{a + b/x + c/x^2}{d + e/x + 
+		  f/x^2}
+\end{align*}
+thus, as $x \to \infty$, $y \to a/d$, and hence the horizontal asymtote is:
+$$ \boxed{y = \frac{a}{d}} $$

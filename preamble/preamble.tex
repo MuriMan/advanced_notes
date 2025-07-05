@@ -9,6 +9,10 @@
 \usepackage{polynom}
 \usepackage[version=4]{mhchem}
 \usepackage{chemfig}
+\usepackage{enumitem}
+\usepackage{esdiff}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 
 \tcbset{
 	myboxstyle/.style={
@@ -41,6 +45,7 @@
 \tcbset{
 	leftlinebox/.style={
 		enhanced,
+		breakable,
 		colback=white,
 		boxrule=0pt,
 		frame hidden,
