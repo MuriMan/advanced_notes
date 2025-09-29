@@ -1,0 +1,224 @@
+\section{Physical quantities and units}
+\subsection{Physical quantities}
+\begin{point}
+Understand that all physical quantities consist of a numerical magnitude
+and unit.
+\end{point}
+To quantify reality, we measure things such as length and time. These
+measurements must be done relative to something -- which are the units of that
+thing. Length is measured in metres -- a metre is a certain length equal to
+$1/10^7$ of the Earth's circumference.
+\begin{point}
+Make reasonable estimates of physical quantities included within the syllabus
+\end{point}
+
+\subsection{SI units}
+\begin{point}
+Recall the following SI base quantities and their units: mass (kg), length (m),
+time (s), current (A), temperature (K)
+\end{point}
+Self explanatory.
+\begin{point}
+Express derived units as products or quotients of the SI base units and use the
+derived units for quantities listed in this syllabus as appropriate
+\end{point}
+There are quantities aside from those described above -- which come from
+quantities consisting of some product or quotient of the above quantites. Let's
+consider the case of speed, which is the result of distance divided by time,
+which hence has unit: \SI{}{m/s}, as [m] is that of length and [s] is that of
+time.
+\begin{point}
+Use SI base units to check the homogeneity of physical equations
+\end{point}
+Units of left hand side of equation must be the same as that of the right hand
+side. Let's consider the equations for kinetic energy, $E_k$ and gravitational
+potential energy $E_p$.
+
+$$ E_p = mgh $$
+$$ E_k = \frac{1}{2}mv^2 $$
+
+In the case where the two are equal,
+
+$$ mgh = \frac{1}{2}mv^2 $$
+
+On the LHS we have [\SI{}{kg}][\SI{}{N/kg}][\SI{}{m}], that is [\SI{}{N.m}],
+and since [N] = [\SI{}{kg.m/s^2}], this is [\SI{}{kg.m^2/s^2}].
+And on the RHS we have [\SI{}{kg}][\SI{}{m/s}]$^2$ which simplifies to 
+[\SI{}{kg.m^2/s^2}].
+
+\begin{point}
+Recall and use the following prefixes and their symbols to indicate decimal 
+submultiples or multiples of both base and derived units: pico (p), nano (n), 
+micro ($\mu$), milli (m), centi (c), deci (d), kilo (k), mega (M),
+giga (G), tera (T)
+\end{point}
+\begin{center}
+    \begin{tabular}{c|c}
+        \textbf{Prefix} & \textbf{Power of 10} \\
+        pico (p)  & $10^{-12}$ \\
+        nano (n)  & $10^{-9}$ \\
+        micro ($\mu$) & $10^{-6}$ \\
+        milli (m) & $10^{-3}$ \\
+        centi (c) & $10^{-2}$ \\
+        deci  (d) & $10^{-1}$ \\
+		unit  & $10^0$ \\
+        kilo  (k) & $10^{3}$ \\
+        mega  (M) & $10^{6}$ \\
+        giga  (G) & $10^{9}$ \\
+        tera  (T) & $10^{12}$ \\
+    \end{tabular}
+\end{center}
+
+\subsection{Errors and uncertainties}
+\begin{point}
+Understand and explain the effects of systematic errors (including zero errors) 
+and random errors in
+measurements
+\end{point}
+Another factor that uncertainty depends on is \emph{error}. \define{Errors}
+arise from imperfections in equipment or the person carrying out the 
+experiment. There are three types of error:
+\begin{enumerate}
+	\item \define{Systematic error}: These are errors due to faults in the
+		instruments being used to measure. For example, the spring in a
+		used force meter may be worn out and hence give a consistently higher
+		reading. Parallax errors are those which arise when readings are taken
+		at an angle from the markings on the instrument, causing the reading
+		to be taken to seem higher or lower than what it should be.
+		\emph{Systematic error is often corrected by recalibrating
+		the instrument or by correcting the technique used}.
+	\item \define{Zero error}: The zero on a ruler might not be at the 
+		beginning of the ruler. This will introduced a fixed error into any
+		reading unless it is allowed for. \ul{This is a type of systematic
+		error}. \emph{Zero error is compensated for by adding or subtracting
+		a certain value -- the value that the zero mark on the apparatus is
+		offset by.}
+	\item \define{Random error}: When a judgement has to be made by a human
+		observer, a measurement may sometimes be above or below the true value.
+		\emph{Random errors can be reduced by making multiple measurements and 
+		taking the results.}
+\end{enumerate}
+\begin{point}
+Understand the distinction between precision and accuracy
+\end{point}
+Measurements can never be perfect, since we can infinitely improve the
+\emph{accuracy} of a measurement. The \define{accuracy} of a measurement
+is how close it is to the \emph{true value}. The \define{true value} is the
+actual value of the thing being measured, which will always be truly unknown.
+Only in theory can the we find exact values without any \emph{uncertainty}
+
+The \define{uncertainty} in a reading is an estimate of the difference between
+the reading and the true value of the quantity being measured. This often
+comes down to the smallest possible reading possibly to be taken by a certain
+instrument, or, in certain cases, half of that.
+
+Consider that a reading of \SI{2.6}{cm} is taken using a ruler. The lowest
+possible reading that can be taken from that ruler is \SI{0.1}{cm}. This is
+the \define{precision} of the ruler -- the smallest change in value that can
+be measured by it. Thus, using this ruler, we cannot determine if the 
+measurement made is \SI{2.61}{cm} or \SI{2.67}{cm}. So, the reading is recorded
+\SI[separate-uncertainty=true]{2.6 \pm 0.1}{cm}, because the true value may be 
+any of these.
+
+However, if the reading to be taken comes out to be between two markings on
+the instrument, say, between the markings for \SI{1.1}{cm} and \SI{1.2}{cm}.
+We hence record the reading as \SI[separate-uncertainty=true]{1.05 \pm 0.05}
+{cm}.
+
+In the above cases, the value that is being added or subtracted from the
+reading seen is the uncertainty. This is written
+$$ x \pm \Delta x$$
+where $\Delta x$ is the uncertainty of a reading $x$.
+
+We may also express uncertainties in two other ways, \define{fractional}
+and \define{percentage uncertainties}.
+$$ \text{(fractional uncertainty)} = \frac{\Delta x}{x} $$
+$$ \text{(percentage uncertainty)} = \frac{\Delta x}{x} \times 100\% $$
+
+\begin{point}
+Assess the uncertainty in a derived quantity by simple addition of absolute or 
+percentage uncertainties
+\end{point}
+When we take two readings to make one measurement, for example measuring length
+in such a way that we take two readings from a metre rule and then subtract the
+larger reading from the smaller one. Here, the uncertainty from the instrument
+has an effect twice, thus the reading taken has twice the uncertainty. 
+Mathematically, for two readings $A$ and $B$:
+$$ A = A_{\text{measured}} \pm \Delta A $$
+$$ B = B_{\text{measured}} \pm \Delta B $$
+$$ A + B = A_{\text{measured}} + B_{\text{measured}} \pm(\Delta A + \Delta B)$$
+
+When quantities are raised to a power, its absolute uncertainty is multiplied
+by that power.
+\subsection{Scalars and vectors}
+\begin{point}
+Understand the difference between scalar and vector quantities and give 
+examples of scalar and vector quantities included in the syllabus
+\end{point}
+A \define{scalar} is a quantity that has only a magnitude. A \define{vector}
+is a quantity that has both magnitude and direction. We show the direction
+of a vector using the angle it makes with another direction.
+
+\begin{center}
+\begin{tikzpicture}
+	\draw[->, thick] (0,0) -- (0,3) node[above]{N};
+	\draw[->, thick] (0,0) -- (5,0) node[right]{E};
+	\draw[->] (0,0) -- (5, 2) node[midway, above]{$\vect{a}$};
+
+	\node at (1.2, 0.2) {$21.8^{\circ}$};
+\end{tikzpicture}
+\end{center}
+The above diagram shows a vector $\vect{a}$, which has magnitude $|\vect{a}|$,
+and lies $21.8^{\circ}$ from East. Or, we may separate it into two 
+\emph{components} mathematically, shown later.
+\begin{point}
+Add and subtract coplanar vectors
+\end{point}
+Consider vectors $\vect{a}$ and $\vect{b}$, such that $\vect{a}\text{, }
+\vect{b} \in \mathbb{C}$. Their sum and difference is simply the algebraic
+sum and difference,
+$$ \vect{a} + \vect{b} $$
+and
+$$ \vect{a} - \vect{b} $$
+respectively.
+\begin{point}
+Represent a vector as two perpendicular components
+\end{point}
+A vector can be represented as two perpendicular components, an $x$-component
+which is horizontal and $y$-component which is vertical. Again, observe the
+case of vector $\vect{a}$, only here, the angle of the vector is represented
+as a general case of $\theta$.
+\begin{center}
+\begin{tikzpicture}
+	\draw[->, thick] (0, 0) -- (0, 2);
+  % Left curly brace (rotated underbrace)
+	\node at (-0.5,1) {
+			\rotatebox[origin=c]{270}{$\underbrace{\hspace{2cm}}$}
+		};
+
+  % Horizontal label for the brace
+	\node at (-1,1) {$a_y$};
+	\draw[->, thick] (0,0) -- (5,0);
+	\draw[mid arrow] (0,0) -- (5, 2) node[midway, above]{$\vect{a}$};
+
+	\draw[dashed] (5,2) -- (5, 0);
+	\draw[dashed] (5,2) -- (0, 2);
+
+	\draw[decorate,decoration={brace,mirror,amplitude=5pt},thick]
+		(0,-0.5) -- (5,-0.5) node[midway, below=8pt] {$a_x$};
+
+	\node at (1, 0.2) {$\theta$};
+\end{tikzpicture}
+\end{center}
+
+Thus the components are
+\begin{align*}
+\sin \theta &= \frac{a_y}{\vect{a}} \\
+\implies \Aboxed{a_y &= \vect{a}\sin\theta}
+\end{align*}
+\begin{align*}
+\cos \theta &= \frac{a_y}{\vect{a}} \\
+\implies \Aboxed{a_y &= \vect{a}\cos\theta}
+\end{align*}
+
+The equations boxed above apply for any vector.

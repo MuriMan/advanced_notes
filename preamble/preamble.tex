@@ -1,3 +1,4 @@
+\usepackage{cancel}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[most]{tcolorbox}
@@ -12,10 +13,12 @@
 \usepackage{enumitem}
 \usepackage{esdiff}
 \usepackage{pgfplots}
+\usepackage{siunitx}
 \pgfplotsset{compat=1.18}
 
 \tcbset{
 	myboxstyle/.style={
+		breakable,
 		enhanced,
 		boxrule=0pt,
 		frame hidden,
@@ -74,3 +77,12 @@
 \newcommand{\eorb}{\fbox{\phantom{$\upharpoonleft\downharpoonright$}}}
 
 \newcommand{\conf}[2]{\mathrm{#1}^{#2}}
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+
+\usetikzlibrary{decorations.markings}
+\tikzset{
+	mid arrow/.style={
+		decoration={markings, mark=at position 0.5 with {\arrow{latex}}},
+		postaction={decorate}
+	}
+}

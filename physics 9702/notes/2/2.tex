@@ -1,0 +1,129 @@
+\section{Kinematics}
+\subsection{Equations of motion}
+
+\begin{point}
+Define and use distance, displacement, speed, velocity and acceleration
+\end{point}
+
+\define{Acceleration} is the rate of change of velocity of an object,
+whose unit is [\SI{}{ms^{-2}}]. \define{Velocity} is the rate of change of
+displacement of an object, whose unit is [\SI{}{ms^{-1}}]. \define{Speed} is 
+the scalar of velocity; the rate of change of distance. \define{Displacement}
+is the vector form of distance, i.e., it is the position of an object from a
+certain point, with unit [\SI{}{m}].
+
+Below are the mathematical symbols corresponding to the above quantities:
+
+\begin{center}
+\begin{tabular}{c c}
+	\textbf{Quantity} & \textbf{Symbol} \\
+	\hline
+	displacement & $s$ \\
+	initial velocity & $u$ \\
+	final velocity & $v$ \\
+	acceleration & $a$ \\
+	time & $t$
+\end{tabular}
+\end{center}
+
+\begin{point}
+Use graphical methods to represent distance, displacement, speed, velocity and 
+acceleration
+\end{point}
+We can plot the distance travelled, displacement, speed, velocity or
+acceleration of an object against time on a graph. This allows us to visualise
+an object's motion. The gradient of a graph is the quantity found when its
+vertical axis is divided by its horizontal axis, and the area under a graph is
+the quantity found when the two quantities are multiplied.
+
+Since the variables are $suvat$, the following equations are often referred
+to as the suvat equations.
+
+\begin{point}
+Determine displacement from the area under a velocity-time graph
+\end{point}
+Note that, the area of under a speed-time graph is the object's distance
+travelled.
+
+\begin{point}
+Determine velocity using the gradient of a displacement-time graph
+\end{point}
+Note that, the gradient of a distance-time graph gives speed.
+
+\begin{point}
+Determine acceleration using the gradient of a velocity-time graph
+\end{point}
+Note that, the gradient of a speed-time graph would give the magnitude of
+acceleration.
+
+\begin{point}
+Derive, from the definitions of velocity and acceleration, equations that
+represent uniformly accelerated motion in a straight line
+\end{point}
+From the definition of acceleration,
+\begin{align*}
+a &= \frac{\text{(change in velocity), }\Delta v}
+{t} \\
+a &= \frac{v - u}{t} \\
+\implies \Aboxed{v &= u + at} \tag{1}
+\end{align*}
+which comes from the gradient of a velocity-time graph.
+
+Average velocity, $v_{\text{avg}}$ is as follows:
+\begin{align*}
+	v_{\text{avg}} &= \frac{s}{t} \\
+	s &= v_{\text{avg}} \\
+	\Aboxed{s &= \left(\frac{u + v}{2}\right)t} \tag{2}
+\end{align*}
+where $v_{\text{avg}}$ comes from the area under a velocity-time graph.
+
+Substituting equation (1) into equation (2), we find
+$$ \boxed{s = ut + \frac{1}{2}at^2} $$
+
+From the first and third equations, we can derive a fourth equation. First, we
+make $t$ the subject of the first equation,
+$$ t = \frac{v - u}{a} $$
+which we substitute into the third equation,
+$$s = u\left(\frac{v-u}{a}\right) + \frac{1}{2}a\left(\frac{v-u}{a}\right)^2$$
+which simplifies down to,
+$$ \boxed{v^2 = u^2 + 2as} $$
+
+We may also substitute $t = (v - u)/a$ into equation (2), which gives the
+same result.
+
+\begin{point}
+Solve problems using equations that represent uniformly accelerated motion in a
+straight line, including the motion of bodies falling in a uniform 
+gravitational field without air resistance
+\end{point}
+We must identify the variables provided, using it to find those unknown. Each
+equation of motion has 4 variables in use, and one absent. Thus we can find
+one variable out of suvat, given 3 of them.
+\begin{itemize}
+	\item $v = u + at$ lacks $s$.
+	\item $s = \left(\frac{u + v}{2}\right)t$ lacks $a$.
+	\item $s = ut + \frac{1}{2}at^2$ lacks $v$.
+	\item $v^2 = u^2 + 2as$ lacks $t$.
+\end{itemize}
+
+\begin{point}
+Describe an experiment to determine the acceleration of free fall using a
+falling object
+\end{point}
+By timing a falling object, we may determine the acceleration of free fall, 
+$g$. Seeing that $u = 0$, we see that
+$$ s = \frac{1}{2}at^2 $$
+Having measured the distance it falls, $a$ is the remaining unknown in the
+above equation, the value of which is the same as $g$.
+
+\begin{point}
+Describe and explain motion due to a uniform velocity in one direction and a
+uniform acceleration in a perpendicular direction
+\end{point}
+An object thrown has two components to its velocity, the vertical and 
+horizontal. The vertical component of its velocity is affected by gravitational
+acceleration, whereas the horizontal component is not affected by any
+acceleration.
+
+To solve problems of this kind, we separate the displacements, velocities and
+acceleration into their perpendicular components, and solve accordingly.

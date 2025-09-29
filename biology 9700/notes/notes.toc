@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Cell structure}{2}{}%
+\contentsline {subsection}{\numberline {1.1}The microscope in cell studies}{2}{}%
+\contentsline {subsection}{\numberline {1.2}Cells as the basic units of living organisms}{2}{}%
+\contentsline {section}{\numberline {2}Biological molecules}{6}{}%
+\contentsline {subsection}{\numberline {2.1}Testing for biological molecules}{6}{}%
+\contentsline {subsection}{\numberline {2.2}Carbohydrates and lipids}{6}{}%
+\contentsline {section}{\numberline {3}Enzymes}{8}{}%
+\contentsline {subsection}{\numberline {3.1}Mode of action of enzymes}{8}{}%

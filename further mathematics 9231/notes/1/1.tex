@@ -164,7 +164,6 @@ hence,
 $$ \boxed{4y^3 + 49y^2 + 14y - 1 = 0} $$
 \end{important}
 
-\newpage
 High $n$ values fo $S_n$ can be found conveniently using the substitution
 method. We must formulate another polynomial of the same degree as that given
 but with roots of a higher power. As such the $n$ values required for
@@ -253,7 +252,7 @@ we may sketch the curve:\vspace{2pt}
 \begin{tikzpicture}
 	\begin{axis}[
 		domain=-1:3.5,
-		samples=300,
+		samples=100,
 		xlabel=$x$,
 		ylabel=$y$,
 		axis lines=middle,
@@ -299,5 +298,437 @@ We may also observe the following:
 	  &= \frac{a + b/x + c/x^2}{d + e/x + 
 		  f/x^2}
 \end{align*}
-thus, as $x \to \infty$, $y \to a/d$, and hence the horizontal asymtote is:
+thus, as $|x| \to \infty$, $y \to a/d$, and hence the horizontal asymptote is:
 $$ \boxed{y = \frac{a}{d}} $$
+
+\centrebold{Oblique Asymptotes}
+Curves with a quadratic numerator and a linear denominator produce an
+\define{oblique asymptote} -- which is simply a straight line, along with a
+veritical asymptote whose equation is easy to determine.
+
+To find the equation of the oblique asymptote, we simply write the given
+curve in partial fraction form.
+
+\begin{important}
+\emph{Given $y = \dfrac{3x^2 + x + 3}{x + 1}$, find its asymptotes and sketch
+the curve.}
+
+We first perform long division on the given fraction:
+$$ \polylongdiv{3x^2+x+3}{x+1} $$
+therefore,
+$$ y = 3x - 2 + \frac{5}{x + 1} $$
+
+Thus, the asymptotes are $\boxed{x = -1}$ and $\boxed{y = 3x - 2}$.
+For $y = 0$ the curve gives $x = 1$ and for $x = 0$ the curve gives $y = 3$,
+thus the intercepts with the coordinate axes are $(1, 0)$ and $(0, 3)$.
+
+\vspace{1em}
+\begin{center}
+\fbox{
+\begin{tikzpicture}
+	\begin{axis}[
+		domain=-15:15,
+		samples=100,
+		xlabel=$x$,
+		ylabel=$y$,
+		axis lines=middle,
+		enlargelimits,
+		xtick={1},
+		ytick=\empty,
+		ymin=-50, ymax=50,
+		restrict y to domain=-50:50,
+		clip=false,
+		legend pos=north west,
+		]
+	% Plot the function with gaps at vertical asymptotes
+		\addplot [
+			thick,
+			unbounded coords=jump,
+			]
+			{(x^2 - 2*x  + 1) / (x-4)};
+		\addplot [dashed]{x+2};
+
+	% Draw vertical asymptotes
+		\addplot [dashed] coordinates {(4,-45) (4,45)};
+		% \addplot [dashed] coordinates {(1,0) (1,15)};
+		% \addplot [dashed] coordinates {(2,-15) (2,-3)};
+		% \addplot [dashed] coordinates {(2,0) (2,15)};
+
+	\end{axis}
+\end{tikzpicture}
+}
+\end{center}
+\end{important}
+
+In general, a curve
+$$ y = \frac{ax^2 + bx + c}{dx + e} $$
+can be rewritten as
+$$ y = Ax + B + \frac{C}{dx + e} $$
+and hence the asymptotes of such a curve are
+$$ \boxed{x = -\frac{e}{d}} $$
+$$ \boxed{y = Ax + B} $$
+\centrebold{Inequalities}
+Given an inequality such that $f(x) < k$, we can solve the inequality but the
+resulting range may not accurately reflect the true answer.
+
+Consider $y = \dfrac{2x^2}{2x+3}$, such that $y < 2$. We rearrange to get
+$x^2 - 2x - 3 < 0$, whose solution gives $-1 < x < 3$. We now sketch the
+curve:
+\begin{center}
+\fbox{
+\begin{tikzpicture}
+	\begin{axis}[
+		domain=-10:10,
+		samples=100,
+		xlabel=$x$,
+		ylabel=$y$,
+		axis lines=middle,
+		enlargelimits,
+		xtick={-1, 3},
+		ytick=\empty,
+		ymin=-15, ymax=15,
+		restrict y to domain=-15:15,
+		clip=false,
+		legend pos=north west,
+		]
+	% Plot the function with gaps at vertical asymptotes
+		\addplot [
+			thick,
+			unbounded coords=jump,
+			]
+			{(2*x^2) / (2*x+3)};
+		\addplot [dashed]{2};
+
+	% Draw vertical asymptotes
+		\addplot [dashed] coordinates {(-1,0) (-1,2)};
+		\addplot [dashed] coordinates {(3,0) (3,2)};
+		% \addplot [dashed] coordinates {(1,0) (1,15)};
+		% \addplot [dashed] coordinates {(2,-15) (2,-3)};
+		% \addplot [dashed] coordinates {(2,0) (2,15)};
+
+	\end{axis}
+\end{tikzpicture}
+}
+\end{center}
+
+Notice that there is another interval below the $x$-axis, which satisfies the
+given inequality (the line $y=2$ is shown by the horizontal dashed line). 
+Thus the correct answer to the question would be
+$-1 < x < 3$ and $x < -3/2$\footnote{$x = -3/2$ is an asymptote to the curve.}
+
+So, in general, finding all the information about the curve and sketching it
+before solving the inequality is the safest method to solve inequalities
+involving rational functions.
+
+\begin{point}
+Understand and use relationships between the graphs of $y = f(x)$, 
+$y^2 = f(x)$, $y = 1/f(x)$, $y = \left|f(x)\right|$ and $y = f(|x|)$
+\end{point}
+
+Consider functions of the form,
+\begin{align*}
+	y^2 &= ax + b \\
+	\implies y &= \pm \sqrt{ax + b}
+\end{align*}
+therefore, the curves must be such that,
+$$ ax + b > 0 $$
+
+Such curves have an $x$-intercept at $-b/a$ and then turn like a sideways
+parabola to whichever direction the above inequality points.
+
+Below is the curve of $y^2 = 2x+3$,
+\begin{center}
+\fbox{
+\begin{tikzpicture}
+	\begin{axis}[
+		domain=-2:4,
+		samples at={-1.5, -1.48, ..., 4}, % start exactly at domain edge
+		% samples=100,
+		xlabel=$x$,
+		ylabel=$y$,
+		axis lines=middle,
+		enlargelimits,
+		xtick=\empty,
+		ytick=\empty,
+		ymin=-5, ymax=5,
+		restrict y to domain=-5:5,
+		clip=false,
+		legend pos=north west,
+		]
+	% Plot the function with gaps at vertical asymptotes
+		\addplot [
+			thick,
+			unbounded coords=jump,
+			]
+			{(2*x+3)^(1/2)};
+		\addplot [
+			thick,
+			unbounded coords=jump,
+			]
+			{-(2*x+3)^(1/2)};
+		% \addplot [dashed]{2};
+
+	% Draw vertical asymptotes
+		% \addplot [dashed] coordinates {(-1,0) (-1,2)};
+		% \addplot [dashed] coordinates {(3,0) (3,2)};
+		% \addplot [dashed] coordinates {(1,0) (1,15)};
+		% \addplot [dashed] coordinates {(2,-15) (2,-3)};
+		% \addplot [dashed] coordinates {(2,0) (2,15)};
+
+	\end{axis}
+\end{tikzpicture}
+}
+\end{center}
+The above has an $x$-intercept of $x = -3/2$.
+
+For curves such that $y = |f(x)|$, the part of the curve below the $x$-axis
+is simply reflected above the $x$-axis.
+
+For curves such that $y = f(|x|)$, the part to the right of the $y$-axis
+is reflected to the left of the $y$-axis.
+
+\subsection{Summation of series}
+\begin{point}
+Use the standard results for $\Sigma r$, $\Sigma r^2$, $\Sigma r^3$ to
+find related sums
+\end{point}
+Below are the standard results of the above summations,
+$$ \boxed{\sum_{r=1}^{n}{r} = \frac{n(n+1)}{2} = \frac{n^2 + n}{2}}$$
+$$ \boxed{\sum_{r=1}^{n}{r^2} = \frac{n(n+1)(2n+1)}{6} = \frac{2n^3 + 3n^2 
++ n}{6}}$$
+$$ \boxed{\sum_{r=1}^{n}{r^3} = \left[\frac{n(n+1)}{2}\right]^2 
+= \frac{1}{4}n^4 + \frac{1}{2}n^3 + \frac{1}{4}n^2}$$
+
+Thus, for a general expression which may have the form,
+$$ \sum_{r=1}^{n}{ar^3 + br^2 + cr + d} $$
+where $a$, $b$, $c$ and $d$ are constant terms, the sum is,
+$$ a\Sigma r^3 + b\Sigma r^2 + c\Sigma r + dn\footnotemark{} $$
+\footnotetext{$\Sigma r$, when unspecified refers to $\sum_{r=1}^{n}{r}$}
+
+\begin{point}
+Use the method of differences to obtain the
+sum of a finite series
+\end{point}
+If the lower limit of a sum is 1, we may plugin whatever the given upper limit
+is into the standard result. For example,
+$$ \sum_{r=1}^{2n}{r^2} = \frac{(2n)(2n+1)(4n+1)}{6} $$
+
+However, if the lower limit is anything other than 1, suppose $x$, we simply
+subtract the sum from 1 to $x-1$ from the sum from 1 to the upper limit. That
+is,
+
+$$ \sum_{x}^{n}{r} = \sum_{1}^{n}{r} - \sum_{x-1}^{n}{r} $$
+
+This is the \define{method of differences}. Note that, the sum being subtracted
+has a lower limit of $x-1$ because such that the lower limit of the first
+sum is being included in the sum.
+
+\begin{point}
+Recognise, by direct consideration of a sum to
+n terms, when a series is convergent, and find
+the sum to infinity in such cases
+\end{point}
+Convergent series usually come down to the sum of a fractional expression.
+For example, the sum
+$$ \sum_{r=1}^{n}{\frac{1}{r}} $$
+expands out to
+$$ \frac{1}{1} + \frac{1}{2} + \frac{1}{3} + \cdots $$
+
+We see that, as the fraction gets smaller and smaller, the value by which the
+sum increases gets smaller and smaller. Thus, this sum is convergent. However,
+we are not required to find out an expression in terms of $n$.
+
+\begin{important}
+Consider another sum
+$$ \sum_{r=1}^{n}{\left(\frac{1}{r}-\frac{1}{r+1}\right)} $$
+which then expands out to
+\begin{align*}
+\left(\frac{1}{1} - \cancel{\frac{1}{2}}\right) + \left(\cancel{\frac{1}{2}} 
+- \cancel{\frac{1}{3}}\right) + \left(\cancel{\frac{1}{3}} - \frac{1}{4}\right) 
++ \cdots + \\ \left(\frac{1}{n-1} - \cancel{\frac{1}{n}}\right) + 
+\left(\cancel{\frac{1}{n}} - \frac{1}{n+1}\right)
+\end{align*}
+from which we cancel the terms as above, and we can see that the only terms
+that remain uncancelled are $1$ and $-\dfrac{1}{n+1}$. Thus the expression
+comes out to
+$$\boxed{\sum_{r=1}^{n}{\left(\frac{1}{r}-\frac{1}{r+1}\right)} = 1 - 
+\frac{1}{n+1}}$$
+where, as $n \to \infty$,
+$$1 - \frac{1}{\infty+1} = 1 - 0 = 1$$
+\end{important}
+
+For sums with an fraction with a quadratic function in the denominator, we must
+factorise and split the fraction into partial fractions, before undergoing the
+process shown above.
+
+\subsection{Matrices}
+\begin{point}
+Carry out operations of matrix addition,
+subtraction and multiplication, and recognise
+the terms zero matrix and identity (or unit)
+matrix
+\end{point}
+
+For a matrix $\mathbf{M}$, which has $m$ rows and $n$ columns, we say that the
+matrix has an \define{order} or size of $m \times n$. Generally, this matrix
+is represented mathematically as
+$$
+\mathbf{M} = \begin{pmatrix}
+	a_{11} & a_{12} & a_{13} & \cdots & a_{1n}\\
+	a_{21} & a_{22} & a_{23} & \cdots & a_{2n}\\
+	a_{31} & a_{32} & a_{33} & \cdots & a_{3n}\\
+	\vdots & \vdots & \vdots & \ddots & \vdots\\
+	a_{m1} & a_{m2} & a_{m3} & \cdots & a_{mn}
+\end{pmatrix}
+$$
+where $a_{ij}$ is an \define{element} in the matrix which is in the $i$th
+column and $j$th row.
+
+A matrix which has the same number of columns and rows is called a 
+\define{square matrix}.
+
+\centrebold{Matrix Addition and Subtraction}
+Two matrices can only be added or subtracted if they are of the same order,
+where elements in the same column and row are added. Below is a general example
+for a $3 \times 2$ matrix, which can be extended to a matrix of any order
+
+$$ \mathbf{A} = \begin{pmatrix}
+	a_{11} & a_{12} \\
+	a_{21} & a_{22} \\
+	a_{31} & a_{32}
+\end{pmatrix},\,
+\mathbf{B} = \begin{pmatrix}
+	b_{11} & b_{12} \\
+	b_{21} & b_{22} \\
+	b_{31} & b_{32}
+\end{pmatrix} $$
+thus
+$$ \mathbf{A + B} = \begin{pmatrix}
+	a_{11} + b_{11} & a_{12} + b_{12} \\
+	a_{21} + b_{21} & a_{22} + b_{22} \\
+	a_{31} + b_{31} & a_{32} + b_{32} \\
+\end{pmatrix}$$
+and
+$$ \mathbf{A - B} = \begin{pmatrix}
+	a_{11} - b_{11} & a_{12} - b_{12} \\
+	a_{21} - b_{21} & a_{22} - b_{22} \\
+	a_{31} - b_{31} & a_{32} - b_{32} \\
+\end{pmatrix}$$
+
+\centrebold{Matrix Multiplication}
+For a scalar multiplied to a matrix, all the elements of the matrix are 
+multiplied by that scalar.
+
+For matrices that are multiplied, the process is significantly more 
+complicated, below is the case for a pair of $2 \times 2$ matrices.
+$$ \mathbf{A} = \begin{pmatrix}
+	a & b \\
+	c & d
+\end{pmatrix}, \,
+\mathbf{B} = \begin{pmatrix}
+	e & f \\
+	g & h
+\end{pmatrix} $$
+
+$$ \mathbf{AB} = \begin{pmatrix}
+	ae + bg & af + bh \\
+	ce + dg & cf + dh
+\end{pmatrix} $$
+
+Note that, for a matrix product to be calculated, the number of columns of the
+first matrix must be the same as the number of rows of the second matrix. To
+find each new element in the product matrix, we undergo the following 
+procedure:
+\begin{enumerate}
+	\item Take a row from the first matrix.
+	\item Take a column from the second matrix.
+	\item Multiply the matching numbers, (1st with 1st, 2nd with 2nd and so 
+		on).
+	\item Add those products up.
+\end{enumerate}
+
+So if,
+$$ \mathbf{E} = \begin{pmatrix}
+	1 & 2 \\
+	3 & 4
+\end{pmatrix}, \,
+\mathbf{F} = \begin{pmatrix}
+	5 & 6 \\
+	7 & 8
+\end{pmatrix} $$
+then,
+\begin{align*}
+	\mathbf{EF} &= \begin{pmatrix}
+	1 \times 5 + 2 \times 7 & 1 \times 6 + 2 \times 8 \\
+	3 \times 5 + 4 \times 7 & 3 \times 6 + 3 \times 8
+	\end{pmatrix} \\
+				&= \begin{pmatrix}
+					19 & 22 \\
+					43 & 50
+				\end{pmatrix}
+\end{align*}
+
+Generally, matrix multiplication is said to be \emph{non-commutative}, which
+means
+$$ \mathbf{AB} \ne \mathbf{BA} $$
+
+The matrix in which all the elements are zero is known as the \define{zero
+matrix}. It can be of any size and is represented
+$$ 0_{mn} = \begin{pmatrix}
+	0 & 0 & 0 & \cdots \\
+	0 & 0 & 0 & \cdots \\
+	0 & 0 & 0 & \cdots \\
+	\vdots & \vdots & \vdots & \ddots \\
+\end{pmatrix} $$
+
+Thus, $\mathbf{AB} = \mathbf{BA}$ when one of the matrices being multiplied is
+a zero matrix, since the product is also a zero matrix.
+
+Also, note that
+$$ \boxed{\mathbf{A}^m\mathbf{A}^n = \mathbf{A}^n\mathbf{A}^m = \mathbf{A}^
+{m+n}} $$
+thus if $\mathbf{A}^m = \mathbf{B}$, $\mathbf{AB} = \mathbf{BA}$.
+
+In a square matrix, the line of elements that goes from the top left corner to
+the bottom right corner is called the \define{diagonal}. The line of elements
+that goes from the top right to the bottom left is called the \define{off
+diagonal}. 
+
+The square matrix where the diagonal consists of 1 and the rest of the matrix 
+is 0 is called the \define{identity matrix}. It is represented by $\mathbf{I}$.
+The property of the identity matrix is that, when it is multiplied to another
+matrix, the matrix remains unchanged
+$$ \mathbf{AI} = \mathbf{IA} = \mathbf{A} $$
+
+\begin{point}
+Recall the meaning of the terms ‘singular’ and
+‘non-singular’ as applied to square matrices
+and, for $2 \times 2$ and $3 \times 3$ matrices, evaluate
+determinants and find inverses of non-singular
+matrices
+\end{point}
+A matrix with repeated rows is called a \define{singular matrix}. Such matrices
+cannot have \define{inverse matrices}. A matrix which can have an inverse is
+known as a \define{non-singular matrix}. \emph{These definitions apply for
+square matrices}.
+
+For a matrix $\mathbf{A}$, its inverse is represented $\mathbf{A}^{-1}$. This
+is such that
+$$ \mathbf{AA}^{-1} = \mathbf{I} $$
+
+\centrebold{Determinants}
+The determinant of a matrix, written $\det(\mathbf{A})$ for a matrix 
+$\mathbf{A}$ is used to determine whether the inverse of that matrix will 
+exist. If $\det(\mathbf{A}) = 0$, the inverse of the matrix does not exist,
+otherwise it does. The determinant for a $2 \times 2$ matrix is the product
+of the elements on the diagonal subtracted by the product of the elements on
+the off diagonal. That is, for
+$$ \mathbf{A} = \begin{pmatrix}
+	a & b \\
+	c & d
+\end{pmatrix} $$
+the determinant is
+$$ \det(\mathbf{A}) = \begin{vmatrix}
+	a & b \\
+	c & d
+\end{vmatrix} = ad - bc $$
