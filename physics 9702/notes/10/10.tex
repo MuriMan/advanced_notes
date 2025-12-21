@@ -1,0 +1,114 @@
+\section{D.C. circuits}
+\subsection{Practical circuits}
+\begin{point}
+Recall and use the circuit symbols shown in section 6 of this syllabus
+\end{point}
+Refer to the syllabus.
+\begin{point}
+Draw and interpret circuit diagrams containing the circuit symbols shown in 
+section 6 of this syllabus
+\end{point}
+Skill issue.
+\begin{point}
+Define and use the electromotive force (e.m.f.) of a source as energy 
+transferred per unit charge in driving charge around a complete circuit
+\end{point}
+Self explanatory.
+\begin{point}
+Distinguish between e.m.f. and potential difference (p.d.) in terms of energy 
+considerations
+\end{point}
+In case of emf, the work is done to convert energy from some form (chemical in
+case of batteries, kinetic in case of a dynamo, etc.) to electrical form. In
+case of pd, the work is done to convert energy from electrical to some other
+form (heat in the case of resistors, light in the case of a lamp, etc.).
+\begin{point}
+Understand the effects of the internal resistance of a source of e.m.f. on the 
+terminal potential difference
+\end{point}
+The emf source of a circuit often has some resistance, as some work is done in
+tranferring energy to other forms as work is done to drive the charge around
+the force itself. This resistance is known as the internal resistance.
+
+Consider a circuit with a battery of emf $E$ and internal resistance $r$, which
+is connected to a resistor of resistance $R$, and the current in the circuit is
+$I$. Thus, we can write
+\begin{align*}
+	E &= I(R + r) \\
+	  &= IR + Ir
+\end{align*}
+
+We cannot measure E, if we measure the potential difference across the 
+terminals of the battery, we get \emph{terminal pd} $V$, which is the same
+as the pd across the external resistor. We thus have
+$$ V = IR $$
+which is less than $E$ by $Ir$. Hence,
+$$ V = E - Ir $$
+
+\subsection{Kirchhoff's laws}
+\begin{point}
+Recall Kirchhoff’s first law and understand that it is a consequence of 
+conservation of charge
+\end{point}
+Kirchhoff's first law states that the current entering a junction in an
+electrical circuit equals the total current leaving the junction.
+\begin{point}
+Recall Kirchhoff’s second law and understand that it is a consequence of 
+conservation of energy
+\end{point}
+Kirchhoff's second law states that the sum of the emfs around any loop in a
+circuit is equal to the sum of the pds around the loop.
+\begin{point}
+Derive, using Kirchhoff’s laws, a formula for the combined resistance of two 
+or more resistors in series
+\end{point}
+Consider resistors of resistance $R_1$ and $R_2$ connected in series to a
+source of emf $V$ and have potential differences $V_1$ and $V_2$. Thus
+we have $V = IR$, $V_1 = IR_1$ and $V_2 = IR_2$. We now derive
+\begin{align*}
+	V &= V_1 + V_2 \\
+	\implies IR &= IR_1 + IR_2 \\
+	\implies R &= R_1 + R_2
+\end{align*}
+So, if we have $n$ resistors in series, their combined resistance is
+$$ \boxed{R_1 + R_2 + \cdots + R_n} $$
+
+Now consider these resistors connected in parallel, which have current $I_1$
+and $I_2$ flowing through them. By Kirchhoff's first law
+$$ I = I_1 + I_2 $$
+we also know $I = V/R$, $I_1 = V/R_1$ and $I_2 = V/R_2$. We now derive
+\begin{align*}
+	V/R &= V/R_1 + V/R_2 \\
+	\implies 1/R &= 1/R_1 + 1/R_2
+\end{align*}
+So for $n$ resistors in parallel, their combined resistance is
+$$ \boxed{1/R = 1/R_1 + 1/R_2 + \cdots + 1/R_n} $$
+\begin{point}
+Use the formula for the combined resistance of two or more resistors in 
+parallel
+\end{point}
+Use it lol.
+\begin{point}
+Use Kirchhoff’s laws to solve simple circuit problems
+\end{point}
+Do it.
+
+\subsection{Potential dividers}
+\begin{point}
+Understand the principle of a potential divider circuit
+\end{point}
+A \define{potential divider} is a cicruit that splits the potential difference
+from a source into two parts, using two resistances in series to each other.
+
+Consider a circuit with two resistors of resistance $R_1$ and $R_2$ in series
+to a source of emf $V$. The pd across the two resistors are $V_1$ and $V_2$,
+which are
+$$ V_1 = \left(\frac{R_1}{R_1 + R_2}\right)(V) $$
+$$ V_2 = \left(\frac{R_2}{R_1 + R_2}\right)(V) $$
+Note that,
+$$ V = V_1 + V_2 $$
+so the emf voltage is being divided.
+\begin{point}
+Recall and use the principle of the potentiometer as a means of comparing 
+potential differences
+\end{point}

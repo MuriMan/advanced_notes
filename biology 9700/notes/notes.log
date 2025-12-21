@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2026/dev/Arch Linux)  (format=lualatex 2025.9.22)  26 SEP 2025 21:50
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2026/dev/Arch Linux)  (format=lualatex 2025.11.12)  7 DEC 2025 12:02
  restricted system commands enabled.
 **notes.tex
 (./notes.tex
@@ -50,7 +50,11 @@ luaotfload | db : Font names database loaded from /home/abrar/.texlive/texmf-var
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen140
-) (../../preamble/preamble.tex (/usr/share/texmf-dist/tex/latex/cancel/cancel.sty
+) (../../preamble/preamble.tex (/usr/share/texmf-dist/tex/latex/plimsoll/plimsoll.sty
+Package: plimsoll 2020/10/09 Plimsoll symbol LaTeX Support, Palle Jorgensen. Version 1.
+\symplimsoll=\mathgroup4
+\symplimsoll-sans=\mathgroup5
+) (/usr/share/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 ) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2024/11/05 v2.17t AMS math features
@@ -120,8 +124,8 @@ LaTeX Info: Redefining \] on input line 2954.
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
@@ -689,7 +693,7 @@ Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 Package: carbohydrates 2015/12/01 v0.1 carbohydrate molecules with chemfig (CN)
 )
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 10.
- (./notes.aux (./1/1.aux) (./2/2.aux) (./3/3.aux))
+ (./notes.aux (./1/1.aux) (./2/2.aux) (./3/3.aux) (./4/4.aux) (./5/5.aux) (./6/6.aux) (./7/7.aux))
 \openout1 = notes.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -824,7 +828,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--60
 
 ]
 \openout2 = ./3/3.aux
- (./3/3.tex)
+ (./3/3.tex
 
 
 
@@ -832,8 +836,99 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--60
 
 
 
+]
 
-] (./notes.aux (./1/1.aux) (./2/2.aux) (./3/3.aux))
+
+
+[9])
+
+
+
+[10
+
+]
+\openout2 = ./4/4.aux
+ (./4/4.tex
+
+
+
+[11
+
+
+
+]
+Underfull \hbox (badness 1478) in paragraph at lines 90--93
+[][]\TU/lmr/m/it/10 molecule \TU/lmr/m/n/10 or []\TU/lmr/m/it/10 lig[]-[]and\TU/lmr/m/n/10 . Glucagon, in-sulin are
+ []
+
+
+
+
+
+[12]
+
+)
+
+[13]
+\openout2 = ./5/5.aux
+ (./5/5.tex
+
+
+
+[14
+
+
+
+]
+
+
+
+[15])
+
+
+
+[16
+
+]
+\openout2 = ./6/6.aux
+ (./6/6.tex
+Underfull \hbox (badness 3503) in paragraph at lines 1--1
+[]\TU/lmr/bx/n/14.4 Nu-cleic acids and pro-tein
+ []
+
+
+Underfull \hbox (badness 1924) in paragraph at lines 2--2
+[]\TU/lmr/bx/n/12 Struc-ture of nu-cleic acids and
+ []
+
+
+
+
+
+[17
+
+
+
+]
+
+
+
+[18]
+
+)
+
+[19]
+\openout2 = ./7/7.aux
+ (./7/7.tex)
+
+
+
+[20
+
+
+
+
+] (./notes.aux (./1/1.aux) (./2/2.aux) (./3/3.aux) (./4/4.aux) (./5/5.aux) (./6/6.aux) (./7/7.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -841,19 +936,19 @@ L3 programming layer <2025-01-18>
 )
 
 Here is how much of LuaTeX's memory you used:
- 39699 strings out of 475506
+ 40123 strings out of 475506
  125026,1648299 words of node,token memory allocated
- 2432 words of node memory still in use:
-   32 hlist, 2 vlist, 14 rule, 3 glue, 4 kern, 99 glyph, 185 attribute, 56 glue_spec, 185 attribute_list, 4 write, 24 pdf_literal, 24 pdf_colorstack nodes
-   avail lists: 1:29,2:4750,3:2067,4:198,5:960,6:71,7:9882,8:20,9:1568,10:20,11:684
- 61710 multiletter control sequences out of 65536+600000
- 64 fonts using 4619591 bytes
+ 3955 words of node memory still in use:
+   32 hlist, 2 vlist, 14 rule, 3 glue, 4 kern, 237 glyph, 323 attribute, 57 glue_spec, 323 attribute_list, 4 write, 24 pdf_literal, 24 pdf_colorstack nodes
+   avail lists: 1:29,2:4474,3:2067,4:198,5:973,6:71,7:9744,8:20,9:1568,10:20,11:684
+ 62045 multiletter control sequences out of 65536+600000
+ 78 fonts using 5384151 bytes
  121i,10n,117p,752b,1107s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on notes.pdf (9 pages, 121109 bytes).
+</usr/share/texmf-dist/fonts/opentype/public/lm/lmroman7-italic.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on notes.pdf (21 pages, 186600 bytes).
 
-PDF statistics: 165 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
+PDF statistics: 212 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 131072)
  256 words of extra memory for PDF output out of 10000 (max. 100000000)
 

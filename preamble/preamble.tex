@@ -1,3 +1,4 @@
+\usepackage{plimsoll}
 \usepackage{cancel}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -44,6 +45,7 @@
 
 \newcommand{\define}[1]{\ul{\emph{#1}}}
 \newcommand{\centrebold}[1]{\begin{center}\textbf{#1}\end{center}}
+\newcommand{\G}[1]{$\text{G}_{#1}$}
 
 \tcbset{
 	leftlinebox/.style={
@@ -86,3 +88,7 @@
 		postaction={decorate}
 	}
 }
+
+\newcommand{\celsius}{\ensuremath{^\circ\mathrm{C}}}
+
+\DeclareMathOperator{\Var}{Var}

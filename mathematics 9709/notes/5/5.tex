@@ -1,0 +1,59 @@
+\section{Probability \& Statistics 1}
+\subsection{Representation of data}
+
+\begin{point}
+Select a suitable way of presenting raw
+statistical data, and discuss advantages and/
+or disadvantages that particular representations
+may have
+\end{point}
+\begin{point}
+Draw and interpret stem-and-leaf diagrams, box-and-whisker plots, histograms
+and cumulative frequency graphs
+\end{point}
+Stem-and-leaf diagrams are a way to arrange the raw data.
+
+Box-and-whisker plots (boxplots) are one dimensional diagrams which show
+the interquartile range (IQR) and the minimum and maximum of the given data,
+and also outliers when applicable.
+
+Histograms are used where the independent variable comes in the form of ranges.
+We find frequency density for each range, be finding range width and dividing
+frequency by it. Then we plot frequency density across the ranges on the 
+x-axis.
+
+\begin{point}
+Understand and use different measures of
+central tendency (mean, median, mode) and
+variation (range, interquartile range, standard
+deviation)
+\end{point}
+\centrebold{Measures of Central Tendency}
+For an ungrouped set of data with $n$ observations and frequencies $x_1, x_2,
+\dots\, x_n$, the \define{mean} is
+$$ \boxed{\bar{x} = \frac{\Sigma x}{n}} $$
+
+For grouped data where the groups have midvalues $x$ and the groups each have
+frequencies $f$, the mean is
+$$ \boxed{\bar{x} = \frac{\Sigma xf}{\Sigma f} = \frac{\Sigma fx}{\Sigma f}} $$
+
+\define{Coded data} is where each observation in the set is offset by a certain
+value. Here, for ungrouped data,
+$$ \boxed{\bar{x} = \frac{\Sigma (x-b)}{n} + b} $$
+and for grouped data,
+$$ \boxed{\bar{x} = \frac{\Sigma (x-b)f}{\Sigma f} + b} $$
+
+For ungrouped data, the \define{median} is at the 
+$\left(\frac{n+1}{2}\right)$th value, and it is at the $\frac{n}{2}$th value on 
+a cumulative frequency graph.
+
+\centrebold{Measures of variation}
+Interquartile range is difference between upper and lower quartile, $Q_3 - Q_1$
+where $Q_n = (n/4)\Sigma f$
+
+For ungrouped data, standard deviation ($\sigma$) is as follows
+$$ \sigma (x) = \sqrt{\Var{x}} = \sqrt{\frac{(\Sigma x - \bar{x})^2}{n}}
+= \sqrt{\frac{\Sigma x^2}{n} - \bar{x}^2} $$
+and for grouped data,
+$$ \sigma (x) = \sqrt{\Var{x}} = \sqrt{\frac{(\Sigma x - \bar{x})^2 f}{\Sigma f}}
+= \sqrt{\frac{\Sigma x^2 f}{\Sigma f} - \bar{x}^2} $$

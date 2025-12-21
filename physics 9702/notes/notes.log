@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2026/dev/Arch Linux)  (format=lualatex 2025.7.17)  4 AUG 2025 10:18
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2026/dev/Arch Linux)  (format=lualatex 2025.11.12)  21 DEC 2025 12:10
  restricted system commands enabled.
 **notes.tex
 (./notes.tex
@@ -50,7 +50,11 @@ luaotfload | db : Font names database loaded from /home/abrar/.texlive/texmf-var
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen140
-) (../../preamble/preamble.tex (/usr/share/texmf-dist/tex/latex/cancel/cancel.sty
+) (../../preamble/preamble.tex (/usr/share/texmf-dist/tex/latex/plimsoll/plimsoll.sty
+Package: plimsoll 2020/10/09 Plimsoll symbol LaTeX Support, Palle Jorgensen. Version 1.
+\symplimsoll=\mathgroup4
+\symplimsoll-sans=\mathgroup5
+) (/usr/share/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 ) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2024/11/05 v2.17t AMS math features
@@ -120,8 +124,8 @@ LaTeX Info: Redefining \] on input line 2954.
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
@@ -687,7 +691,7 @@ Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \ar@cellbox=\box97
 )) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 9.
- (./notes.aux (./1/1.aux) (./2/2.aux))
+ (./notes.aux (./1/1.aux) (./2/2.aux) (./3/3.aux) (./4/4.aux) (./5/5.aux) (./6/6.aux) (./7/7.aux) (./8/8.aux) (./9/9.aux) (./10/10.aux))
 \openout1 = notes.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -803,7 +807,113 @@ Underfull \hbox (badness 5908) in paragraph at lines 49--50
 
 [6
 
-] (./notes.aux (./1/1.aux) (./2/2.aux))
+]
+\openout2 = ./3/3.aux
+ (./3/3.tex)
+
+
+
+[7
+
+
+
+
+]
+\openout2 = ./4/4.aux
+ (./4/4.tex)
+
+
+
+[8
+
+
+
+
+]
+\openout2 = ./5/5.aux
+ (./5/5.tex)
+
+
+
+[9
+
+
+
+
+]
+\openout2 = ./6/6.aux
+ (./6/6.tex)
+
+
+
+[10
+
+
+
+
+]
+\openout2 = ./7/7.aux
+ (./7/7.tex
+
+
+
+[11
+
+
+
+]
+Underfull \hbox (badness 2150) in paragraph at lines 119--121
+[]\TU/lmr/m/it/10 Re-call that wave-lengths in the range $\OT1/cmr/m/n/10 400$\TU/lmr/m/it/10 –$\OT1/cmr/m/n/10 700$
+ []
+
+
+
+)
+
+[12]
+\openout2 = ./8/8.aux
+ (./8/8.tex)
+
+
+
+[13
+
+
+
+
+]
+\openout2 = ./9/9.aux
+ (./9/9.tex
+
+
+
+[14
+
+
+
+])
+
+
+
+[15
+
+]
+\openout2 = ./10/10.aux
+ (./10/10.tex
+
+
+
+[16
+
+
+
+])
+
+
+
+[17
+
+] (./notes.aux (./1/1.aux) (./2/2.aux) (./3/3.aux) (./4/4.aux) (./5/5.aux) (./6/6.aux) (./7/7.aux) (./8/8.aux) (./9/9.aux) (./10/10.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -811,19 +921,19 @@ L3 programming layer <2025-01-18>
 )
 
 Here is how much of LuaTeX's memory you used:
- 38793 strings out of 475506
+ 39197 strings out of 475506
  100000,1648299 words of node,token memory allocated
- 1741 words of node memory still in use:
-   32 hlist, 2 vlist, 14 rule, 2 glue, 4 kern, 32 glyph, 130 attribute, 57 glue_spec, 130 attribute_list, 4 write, 24 pdf_literal, 24 pdf_colorstack nodes
-   avail lists: 1:1,2:2159,3:1138,4:160,5:843,6:60,7:8287,8:27,9:1092,10:16,11:512
- 60830 multiletter control sequences out of 65536+600000
- 71 fonts using 4915383 bytes
- 121i,14n,117p,752b,1008s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 2044 words of node memory still in use:
+   31 hlist, 2 vlist, 14 rule, 2 glue, 4 kern, 52 glyph, 173 attribute, 57 glue_spec, 173 attribute_list, 4 write, 24 pdf_literal, 24 pdf_colorstack nodes
+   avail lists: 1:1,2:2698,3:1625,4:214,5:844,6:83,7:8267,8:27,9:1093,10:16,11:512
+ 61061 multiletter control sequences out of 65536+600000
+ 83 fonts using 5416567 bytes
+ 121i,14n,117p,752b,1011s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on notes.pdf (7 pages, 136891 bytes).
+Output written on notes.pdf (18 pages, 175499 bytes).
 
-PDF statistics: 157 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
+PDF statistics: 193 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 131072)
  256 words of extra memory for PDF output out of 10000 (max. 100000000)
 
