@@ -1,0 +1,207 @@
+\section{Probability \& Statistics 1 (for Paper 5)}
+\subsection{Representation of data}
+
+\begin{point}
+Select a suitable way of presenting raw
+statistical data, and discuss advantages and/
+or disadvantages that particular representations
+may have
+\end{point}
+\begin{point}
+Draw and interpret stem-and-leaf diagrams, box-and-whisker plots, histograms
+and cumulative frequency graphs
+\end{point}
+Stem-and-leaf diagrams are a way to arrange the raw data.
+
+Box-and-whisker plots (boxplots) are one dimensional diagrams which show
+the interquartile range (IQR) and the minimum and maximum of the given data,
+and also outliers when applicable.
+
+Histograms are used where the independent variable comes in the form of ranges.
+We find frequency density for each range, be finding range width and dividing
+frequency by it. Then we plot frequency density across the ranges on the 
+x-axis.
+
+\begin{point}
+Understand and use different measures of
+central tendency (mean, median, mode) and
+variation (range, interquartile range, standard
+deviation)
+\end{point}
+\centrebold{Measures of Central Tendency}
+For an ungrouped set of data with $n$ observations and frequencies $x_1, x_2,
+\dots\, x_n$, the \define{mean} is
+$$ \boxed{\bar{x} = \frac{\Sigma x}{n}} $$
+
+For grouped data where the groups have midvalues $x$ and the groups each have
+frequencies $f$, the mean is
+$$ \boxed{\bar{x} = \frac{\Sigma xf}{\Sigma f} = \frac{\Sigma fx}{\Sigma f}} $$
+
+\define{Coded data} is where each observation in the set is offset by a certain
+value. Here, for ungrouped data,
+$$ \boxed{\bar{x} = \frac{\Sigma (x-b)}{n} + b} $$
+and for grouped data,
+$$ \boxed{\bar{x} = \frac{\Sigma (x-b)f}{\Sigma f} + b} $$
+
+For ungrouped data, the \define{median} is at the 
+$\left(\frac{n+1}{2}\right)$th value, and it is at the $\frac{n}{2}$th value on 
+a cumulative frequency graph.
+
+\centrebold{Measures of variation}
+Interquartile range is difference between upper and lower quartile, $Q_3 - Q_1$
+where $Q_n = (n/4)\Sigma f$
+
+For ungrouped data, standard deviation ($\sigma$) is as follows
+$$ \sigma (x) = \sqrt{\Var{x}} = \sqrt{\frac{(\Sigma x - \bar{x})^2}{n}}
+= \sqrt{\frac{\Sigma x^2}{n} - \bar{x}^2} $$
+and for grouped data,
+$$ \sigma (x) = \sqrt{\Var{x}} = \sqrt{\frac{(\Sigma x - \bar{x})^2 f}{\Sigma f}}
+= \sqrt{\frac{\Sigma x^2 f}{\Sigma f} - \bar{x}^2} $$
+
+\subsection{Permutations and combinations}
+\subsection{Probability}
+\begin{point}
+Evaluate probabilities in simple cases by means
+of enumeration of equiprobable elementary
+events, or by calculation using permutations or
+combinations
+\end{point}
+The probability of a certain event is a fraction
+$$ x/y $$
+where $x$ is the number of times the event occurs and $y$ is the number of
+total events that occur.
+
+\begin{point}
+Use addition and multiplication of probabilities,
+as appropriate, in simple cases
+\end{point}
+Addition is OR, multiplication is AND.
+
+\begin{point}
+Understand the meaning of exclusive and
+independent events, including determination
+of whether events $A$ and $B$ are independent
+by comparing the values of $P(A\cap B)$ and
+$P(A) \times P(B)$
+\end{point}
+
+\subsection{Discrete random variables}
+\begin{point}
+Draw up a probability distribution table relating
+to a given situation involving a discrete random
+variable $X$, and calculate $\textrm{\emph{E}}(X)$ and $\Var(X)$
+\end{point}
+A probability distribution table displays all possible outcomes with their
+possibilities. Say, for coin tosses denoted by the discrete random variable
+$X$, the probability distribution is as follows where $x = 1$ denotes heads and
+$x = 0$ denotes tails.
+\begin{center}
+	\begin{tabular}{| c | c | c |}
+		\hline
+		$x$ & 0 & 1 \\
+		P$(X=x)$ & 0.5 & 0.5 \\
+		\hline
+	\end{tabular}
+\end{center}
+
+The mean (expected) outcome is calculated as follows
+$$ \text{E}(X) = \frac{\Sigma xf}{\Sigma f} $$
+where $x$ is outcome and $f$ is expected frequency of outcome
+
+The variance and standard deviation give a measure of the spread of values 
+around the mean. The formula, in case of a random variable, follows
+\begin{align*}
+	\Var X &= \frac{\Sigma x^2 f}{\Sigma f} - \bar{x}^2 \\
+			&= \frac{\Sigma x^2 p }{\Sigma p} - \left\{\text{E}(X)\right\}^2
+\end{align*}
+since $\Sigma p = 1$
+$$ \Var(X) = \Sigma x^2 p - \left\{\text{E}(X)\right\}^2 $$
+
+\begin{point}
+Use formulae for probabilities for the binomial
+and geometric distributions, and recognise
+practical situations where these distributions
+are suitable models
+\end{point}
+Distributions such as the binomial and the geometric may be used to model
+probabilistic scenarios. The \define{binomial distribution} can be used to
+model the number of successes in a fixed number of independent trials and the
+\define{geometric distribution} can be used to model the number of trials up
+to and including the first success in an infinite number of independent trials.
+
+The binomial distribution is denoted as follows
+$$ X \sim \text{B}(n, r) $$
+where $n$ is the number of trials and $r$ is number of sucesses. In this model,
+$$ \text{P}(X = x) = \begin{pmatrix}n\\r\end{pmatrix} (p)^{n-r}(q)^r $$
+
+The geometric distribution is denoted as follows
+$$ X \sim \text{Geo}(p) $$
+where $p$ is the probability of success. Thus, the probability that the first
+success occurs on the $r$th trial is
+$$ p_r = p(1-p)^{r-1} $$
+
+\begin{point}
+Use formulae for the expectation and variance
+of the binomial distribution and for the
+expectation of the geometric distribution.
+\end{point}
+For the binomial distribution,
+$$ \text{E}(X) = \Sigma xp $$
+$$ \Var(X) = \sigma^2 = np(1-p) $$
+
+For the geometric distribution,
+$$ \text{E}(X) = \mu = \Sigma x p_x = 1/p $$
+
+\subsection{The normal distribution}
+\begin{point}
+Understand the use of a normal distribution to
+model a continuous random variable, and use
+normal distribution tables
+\end{point}
+A continuous random variable is that which varies infinitely amongst two
+extremes.
+
+\begin{point}
+Solve problems concerning a variable $X$, where $X \sim N(\mu, \sigma^2)$,
+including
+\begin{itemize}
+	\item[--] finding the value of $P(X > x_1)$ or a related probability, given
+		the values of $x_1$, $\mu$ and $\sigma$.
+	\item[--] finding a relationship between $x_1$, $\mu$ and $\sigma$ given
+		the value of $P(X > x_1)$ or a related probability
+\end{itemize}
+\end{point}
+Let us introduce the standard normal variable $Z$. It has variance 1, and so
+standard deviation 1. $z = \pm 1,\, \pm 2,\text{ and }\pm 3$ represents
+values that are 1, 2 and 3 standard deviations above or below the mean.
+Any $|z| > 3$ has $\phi(z) \approx 0$. 
+
+A vertical line drawn at any value of $Z$ divides the area under the graph into
+two parts: one representing $P(Z \le z)$ and the other representing $P(Z > z)$.
+
+The value of $P(Z \le z)$ is denoted by $\Phi(z)$, the values for which are
+found from the table provided in MF19.
+
+Coding a continuous random variable $X$ by subtracting its mean $\mu$, brings
+its mean zero, forming a variable $X - \mu$. Dividing by $\sigma$ brings the
+standard deviation and variance to 1. Thus, the coded random variable
+$$ \frac{X - \mu}{\sigma} $$
+is normally distributed with mean 0 and variance 1.
+
+The above transforms the distribution $X \sim N(\mu,\sigma^2)$ to
+$Z \sim N(0,1)$. A standardised value
+$$ z = \frac{x - \mu}{\sigma} $$
+tells us exactly how many standard deviations the variable $x$ is from the 
+mean.
+
+\begin{point}
+Recall conditions under which the normal
+distribution can be used as an approximation
+to the binomial distribution, and use this
+approximation, with a continuity correction, in
+solving problems
+\end{point}
+The binomial distribution is approximate to the normal. The approximation
+becomes more accurate the higher the values of $np$ and $n(1-p)$. However,
+approximating a discrete variable to a continuous means that to find
+$P(X=x)$ we have to find $P(x-0.5\le X< x+0.5)$.

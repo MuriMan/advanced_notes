@@ -1,0 +1,192 @@
+\section{Pure Mathematics 3 (for Paper 3)}
+\subsection{Algebra}
+\begin{point}
+Understand and use the meaning of $|x|$, sketch the graph of of $y = |ax+b|$
+and use relations such as $|a|=|b| \iff a^2 + b^2$ and $|x-a|<b \iff a-b<x<a+b$
+when solving equations and inequalities
+\end{point}
+The \define{modulus of $x$}, written as $|x|$ is defined as
+$$
+|x| = \begin{cases}
+x & \text{if } x \ge 0 \\
+-x & \text{if } x < 0
+\end{cases}
+$$
+
+Equation of the following form may be solved as follows
+\begin{align*}
+	|cx+d| &= |ex+f| \\
+	\implies  (cx+d)^2 &= (ex+f)^2
+\end{align*}
+
+Inequalities, as follows, may be expanded
+\begin{align*}
+	|x-a| < b \\
+	\implies -b < x-a < b \\
+	\implies a-b<x<a+b
+\end{align*}
+Note that, the above is applicable if the inequality is inclusive as well.
+
+\begin{equation*}
+	|a| > b
+	\implies a < -b \text{ or } a > b
+\end{equation*}
+
+\begin{point}
+Divide a polynomial, of degree not exceeding 4,
+by a linear or quadratic polynomial, and identify
+the quotient and remainder (which may be zero)
+\end{point}
+A \define{polynomial} is an expression of the form
+$$ a_nx^n + a_{n-1}x^{n-1} + \dots + a_1x^1 + a_0 $$
+where $x$ is a variable, $n$ is a non-negative integer, the coefficients $a_n$,
+$a_{n-1}$, etc. are constants. $a_n$ is said to be the leading coefficient and
+$a_0$ is said to be the constant term.
+
+The highest power of $x$ is a polynomial is called the \define{degree} of
+the polynomial.
+
+The long division of polynomials, I am unable to show here. I am sorry. Open
+a book. Space is provided for you to record what you learn.
+
+\begin{point}
+Use the factor theorem and the remainder
+theorem
+\end{point}
+Let $P(x)$ be a polynomial, which is exactly divisible by a (linear) polynomial
+$ax+b$, giving a quotient $Q(x)$. We derive that 
+\begin{align*}
+	P(x)/(ax+b) &= Q(x) \\
+	\implies P(x) &= (ax+b)(Q(x))
+\end{align*}
+we observe that $P(-b/a) = 0$. This is the \define{factor theorem}, defined
+more formally as follows.
+
+\begin{important}
+	If, for a polynomial $P(x)$, $P(-b/a)=0$ then $ax+b$ is a factor of $P(x)$.
+\end{important}
+
+An extension of the factor theorem is the remainder theorem. Let us say the
+division of $P(x)$ by $ax+b$ gives quotient $Q(x)$ and remainder $R$.
+Mathematically, it can be organised as follows
+\begin{align*}
+	P(x)/(ax+b) = Q(x) + R/(ax+b) \\
+	\implies P(x) = (ax+b)Q(x) + R
+\end{align*}
+we now observe that $P(-b/a) = R$. This is the \define{remainder theorem},
+defined formally as
+\begin{important}
+	If a polynomial $P(x)$ is divided by $ax+b$, the remainder is $P(-b/a)$.
+\end{important}
+We may also observe that the factor theorem is a special case of the remainder
+theorem where $P(-b/a)=0$.
+
+\begin{point}
+Recall an appropriate form for expressing
+rational functions in partial fractions, and carry
+out the decomposition, in cases where the
+denominator is no more complicated than
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item[--] $(ax+b)(cx+d)(ex+f)$
+	\item[--] $(ax+b)(cx+d)^2$
+	\item[--] $(ax+b)(cx^2+d)$
+\end{itemize}
+\end{point}
+We can split proper algebraic fractions into two or more partial fractions
+by using the following identities.
+$$ \boxed{\frac{px+q}{(ax+b)(cx+d)}\equiv\frac{A}{ax+b}+\frac{B}{cx+d}} $$
+where the above can be extended for any number of linear factors.
+
+$$\boxed{\frac{px+q}{(ax+b)(cx+d)^2}\equiv\frac{A}{ax+b}+\frac{B}{cx+d}+\frac{C}{(cx+d)^2}}$$
+
+$$\boxed{\frac{px+q}{(ax+b)(cx^2+d)}\equiv\frac{A}{ax+b}+\frac{Bx+C}{cx^2+d}}$$
+
+\begin{point}
+Use the expansion of $(1+x)^n$, where $n$ is a rational number and $|x|<1$
+\end{point}
+$$\boxed{(1+x)^n=1+nx+\frac{n(n-1)}{2!}x^2+\cdots}$$
+
+\subsection{Logarithmic and exponential functions}
+\begin{point}
+Understand the relationship between logarithms
+and indices, and use the laws of logarithms
+(excluding change of base)
+\end{point}
+\define{Logarithms} are functions that have bases and inputs. In general, for
+a logarithm with base $a$ and input $x$, the output of the function is the
+power $a$ must be raised to to obtain $x$. Mathematically, what follows is
+\begin{align*}
+	\log_a x = c \\
+	\implies x = a^c
+\end{align*}
+
+The laws of logarithms are as follows
+$$ \boxed{\log_a a = 1} $$
+$$ \boxed{\log_a 1 = 0} $$
+$$ \boxed{\log_a a^x = x} $$
+$$ \boxed{a^{\log_a x}=x} $$
+$$ \boxed{\log_a(xy)=\log_a x + \log_a y} $$
+$$ \boxed{\log_a(x/y) = \log_a x - \log_a y} $$
+$$ \boxed{\log_a x^m = m\log_a x} $$
+
+\begin{point}
+Understand the definition and properties of $e^x$
+and $\ln x$, including their relationship as inverse
+functions and their graphs
+\end{point}
+If $y = e^x$, then $x=\ln y$. I refuse to show you the graphs because they are
+inconvenient.
+
+\begin{point}
+Use logarithms to solve equations and
+inequalities in which the unknown appears in
+indices
+\end{point}
+This requires algebraic talent. I have none. JK I am cramming rn and can't
+really write this stuff out cuz it's mega elaborate and I already am great at
+this.
+
+\begin{point}
+Use logarithms to transform a given relationship
+to linear form, and hence determine unknown
+constants by considering the gradient and/or
+intercept.
+\end{point}
+Same as above.
+
+\subsection{Trigonometry}
+\begin{point}
+Understand the relationship of the secant,
+cosecant and cotangent functions to cosine,
+sine and tangent, and use properties and
+graphs of all six trigonometric functions for
+angles of any magnitude
+\end{point}
+$$1/\sin x = \cosec x$$
+$$1/\cos x = \sec x$$
+$$1/\tan x = \cot x$$
+Same deal with the graphs.
+
+\begin{point}
+Use trigonometrical identities for the
+simplification and exact evaluation of
+expressions, and in the course of solving
+equations, and select an identity or identities
+appropriate to the context, showing familiarity in
+particular with the use of
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item[--] $\sec^2\theta\equiv\tan^2\theta$ and $\cosec^2\theta\equiv 1+\cot^2\theta$
+	\item[--] the expansions of $\sin(A\pm B)$, $\cos(A\pm B)$ and
+		$\tan(A\pm B)$
+	\item[--] the formulae for $\sin 2A$, $\cos 2A$ and $\tan 2A$
+	\item[--] the expression of $a\sin\theta + b\cos\theta$ in the
+		forms $R\sin(\theta\pm\alpha)$ and $R\cos(\theta\pm\alpha)$.
+\end{itemize}
+\end{point}
+Simple enough, I just need to get to further calculus.
+
+\subsection{Numerical solution of equations}
+\subsection{Vectors}
+

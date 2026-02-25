@@ -1,0 +1,71 @@
+\documentclass[titlepage, twocolumn]{article}
+\input{../../preamble/preamble}
+
+\title{\emph{Cambridge Advanced Subsidiary Level Notes} \\ 
+Mathematics Cheatsheet}
+\author{Abrar Faiyaz Rahim, degrees pending}
+\date{}
+
+\begin{document}
+\begin{titlepage}
+	\maketitle{}
+\end{titlepage}
+\section{Probability and Statistics}
+
+\centrebold{Discrete random variables}
+Discrete random variables are those where events are separate and seperate,
+\emph{discrete}.
+\begin{itemize}
+	\item Sum of all probabilities  
+		$$ \sum(P(X=x)) = 1 $$
+	\item Expectation (mean)
+		$$ E(X) = \mu = \sum(x\cdot P(X=x)) $$
+	\item Variance
+		$$ \Var(X) = \sigma^2 = E(X^2) - E(X)^2 $$
+		where $E(X^2) = \sum(x^2\cdot P(X=x))$
+\end{itemize}
+
+\centrebold{Binomial distribution}
+When there are a fixed number of trials $n$, each with only two possible
+outcomes where success has probability $p$, the discrete random variable $X$
+follows a binomial distribution $X \sim B(n,p)$.
+\begin{itemize}
+	\item The probability of $r$ successes
+		$$ P(X=r) = \begin{pmatrix}n\\r\end{pmatrix}(p^r)(1-p)^{n-r} $$
+	\item Expectation $$ E(X) = np $$
+	\item Variance $$ \Var(X) = np(1-p) $$
+\end{itemize}
+
+\centrebold{Geometrical distribution}
+Used when the number of trials $X$ until the first success is counted. Trials
+must be independent and probability of success is $p$. $X \sim \text{Geo}(p)$.
+\begin{itemize}
+	\item Probability that success occurs on the $r$th trial
+		$$ P(X=r) = p(1-p)^{r-1} $$
+	\item Failure for $k$ trials
+		$$ P(X > k) = (1-p)^k $$
+	\item Mean
+		$$ E(X) = p^{-1} $$
+\end{itemize}
+
+\centrebold{Normal distribution}
+A continuous distribution used for data that clusters around the mean in a
+``bell curve", denoted $X \sim N(\mu, \sigma^2)$.
+\begin{itemize}
+	\item To standardise the variable $X$ to the standard variable $Z$ such
+		that $Z \sim N(0,1)$.
+		$$ Z = \frac{X-\mu}{\sigma} $$
+	\item The curve is symmetrical, and so the following properties are derived
+		$$ P(Z < -a) = P(Z > a) = 1 - \Phi(a) $$
+		$$ P(Z > -a) = \Phi(a) $$
+\end{itemize}
+
+\centrebold{Normal approximation to the binomial}
+\begin{itemize}
+	\item The approximation is valid when
+		$$ np > 5 \text{ and } n(1-p) > 5$$
+	\item Continuity must be corrected as half a unit above or below the given
+		argument must be taken as a discrete variable is being converted to
+		continuous.
+\end{itemize}
+\end{document}
